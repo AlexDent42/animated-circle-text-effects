@@ -43,11 +43,21 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
+    animation: rotateText 10s linear infinite;
+}
+
+@keyframes rotateText {
+    0% {
+        transform:rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 .text span {
     position: absolute;
     left: 50%;
-    font-size: 1.2em;
+    font-size: 1.0em;
     transform-origin: 0 100px;
 }

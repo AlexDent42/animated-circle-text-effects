@@ -2,8 +2,38 @@
     margin:0;
     padding: 0;
     box-sizing:border-box;
+    font-family: consolas;
 }
 
 :root {
     --whit-color:#fff;
+    --background-color:#ccc;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.circle {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: var(--background-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: url('assets/marvin.png');
+    background-size: cover;
+    border-radius: 50%;
 }
